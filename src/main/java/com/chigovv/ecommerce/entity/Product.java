@@ -1,6 +1,7 @@
 package com.chigovv.ecommerce.entity;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -11,6 +12,7 @@ import java.util.Date;
 @Entity
 @Table(name="product")
 @Data
+@NoArgsConstructor
 public class Product {
 
     @Id
@@ -51,6 +53,4 @@ public class Product {
     @UpdateTimestamp
     private Date lastUpdated;
 
-    public Product() {
-    }
 }
